@@ -2,7 +2,7 @@ package ChatBot;
 
 import java.util.Scanner;
 
-public class ChatBot {
+public class ChatBot{
     public static void main(String[] args) {
         // #1
         System.out.println("Hello! My name is MiMi");
@@ -22,6 +22,14 @@ public class ChatBot {
         int remainder7 = scanner.nextInt();
         int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
 
-        System.out.printf("Your age is %d; that's a good time to start programming!", age);
+        System.out.printf("Your age is %d; that's a good time to start programming!\n", age);
+        //4
+        System.out.println("Now I will prove to you that I can count to any number you want");
+        int count = scanner.nextInt();
+
+        for (int i = 0; i <= count; i++) {
+            System.out.printf("%d !\n", i);
+        }
+
     }
 }
