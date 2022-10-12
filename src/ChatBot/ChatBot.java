@@ -2,7 +2,7 @@ package ChatBot;
 
 import java.util.Scanner;
 
-public class ChatBot{
+public class ChatBot {
     public static void main(String[] args) {
         // #1
         System.out.println("Hello! My name is MiMi");
@@ -30,6 +30,28 @@ public class ChatBot{
         for (int i = 0; i <= count; i++) {
             System.out.printf("%d !\n", i);
         }
+        //5
+        System.out.println("Let's test your programming knowledge.");
+        System.out.println("Why do we use methods?");
+        System.out.println("1. To repeat a statement multiple times.");
+        System.out.println("2. To decompose a program into several small subroutines.");
+        System.out.println("3. To determine the execution time of a program.");
+        System.out.println("4. To interrupt the execution of a program.");
 
+        int j = 0;
+
+        while (j <= 0) {
+            int userAnswer = scanner.nextInt();
+            switch (userAnswer) {
+                case 2 -> {
+                    System.out.println("Great, you right!");
+                    j += 1;
+                }
+                default -> {
+                    System.out.println("Please, try again.");
+                }
+            }
+        }
+        System.out.println("Goodbye, have a nice day!");
     }
 }
